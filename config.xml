@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+        id          = "frdl/web"
+        version     = "0.0.1"
+        height      = "480"
+        width       = "320"
+        viewmodes   = "floating">
+ 
+
+ <name short="frdl/whois">Frdlweb Whois Package</name>
+
+ <description>This is a `whois module` for frdlweb.</description>
+ 
+
+ <preference  name="pid" value="${process.pid}" readonly="true" />
+
+ <preference  name="placeholder" value="example.com" readonly="false" />
+ <preference  name="msg.label" value="Enter your desired domain here:" readonly="false" />
+ <preference  name="msg.button" value="check availability" readonly="false" />
+ <preference  name="errors.invalid.domain" value="%s is not a valid domain" readonly="false" />
+	
+ <preference  name="link.buy.href" value="https://domainundhomepagespeicher.webfan.de/homepagesystem/domain/%%TLD%%-domain/?domain=%%DOMAIN%%" readonly="false" />	
+ <preference  name="link.buy.placeholder" value="%%TLD%%" readonly="false" />		
+ <preference  name="link.buy.placeholder_domain" value="%%DOMAIN%%" readonly="false" />	
+ <preference  name="show.whois.info" value="false" readonly="false" />
+	
+	
+ <preference  name="routes.whois.route" value="/whois-lookup/" readonly="false" />	
+ <preference  name="routes.whois.name" value="whois" readonly="false" />		
+	
+	
+	
+ <author href="http://frdl.de" email="software@frdl.de">Till Wehowski</author>
+
+ <access origin="*" /> 
+ <icon src="favicon.ico"/>
+
+
+
+<content src="whois.module.js" type="text/javascript" /> 	
+		
+	
+<license 
+  xml:lang="en" dir="ltr"
+  src="https://look-up.webfan3.de/?goto=oid%3A1.3.6.1.4.1.37553.8.1.8.4.8" 
+  href="http://look-up.webfan.de/mit-license"
+  data-oid="1.3.6.1.4.1.37553.8.1.8.4.8"
+  data-frdl-id-collection="widget:license">
+<link rel="alternate" type="text" title="mit-license" href="https://look-up.webfan3.de/?goto=oid%3A1.3.6.1.4.1.37553.8.1.8.4.8" />
+<pre type="text">
+MIT License
+
+Copyright (c) 2019 frdlweb
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</pre>
+</license>
+</widget>

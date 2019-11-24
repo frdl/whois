@@ -1,0 +1,17 @@
+{
+  "name" : "frdl/whois",
+  "type" : "frdl-module",
+  "description": "Whois Server.",	  
+  "license": ["MIT"],	  
+  "require" : {
+	    "php": ">=7.2",
+		"frdl/web" : "*",
+		"jsmitty12/phpwhois":"^5.0",
+		"frdl/php-floodprotection" : "*"	
+  },	  
+  "autoload": {
+        "psr-4": {
+            "frdl\\whois\\": "src/frdl/whois/"
+        }
+  }  
+}
