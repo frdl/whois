@@ -24,7 +24,7 @@ class WhoisRpc implements \UMA\JsonRpc\Procedure
 		$query = $params[0];
 		
 
-		$FloodProtection = new \frdl\security\floodprotection\FloodProtection(__METHOD__, 10, 45);
+		$FloodProtection = new \frdl\security\floodprotection\FloodProtection(__METHOD__, 15, 45);
         if($FloodProtection->check($_SERVER['REMOTE_ADDR'])){
             return new \UMA\JsonRpc\Error($request->id(), 'Too many requests, please wait a moment!');
         }			
