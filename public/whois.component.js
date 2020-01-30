@@ -132,88 +132,12 @@ define(['angular-frdl', 'ng-sanitize','@frdl/webfan', 'angular-jsonrpc-client/an
 })	
 	
 	
-	/*
-    .component('frdlwebWhois', { 
 
-
-     selector : 'frdlweb-whois',
-     templateUrl : Widget.directory + 'templates/whois.html', 
-
-     controller : ['$q', '$scope', '$element', '$compile', '$frdl', '$Webfan', '$sce', '$timeout',
-				   function frdlwebWhoisController($q, $scope, $element, $compile, $frdl, $Webfan, $sce, $timeout){
-                  
-               var self = this;
-
-		       var p = ($frdl.UI && 'function' === typeof $frdl.UI.progress) ? $frdl.UI.progress() : false;
-
-			
-		 
-		 
-		 
-		 
-		 
-               self.widget = widget;
-               self.$searching = 0;  
-               self.path = function(name, params){			
-	              return location.protocol + '//' + widget.preferences.host + $Webfan.hps.Router.generate(name, params); 			
-	           };	
-
-
-                self.queryWhoisServer = function(q){
-	
-					if(!$frdl.strpos(q, '.') ){
-					    $frdl.alert.error( $frdl.inX.__(widget.preferences.errors.invalid.domain, [q]) + '!');
-						return;
-					}
-					
-					self.domain = {
-					         tld : q.split(/\./).reverse()[0],
-						     host : q.split(/\./).reverse()[1] + '.' + q.split(/\./).reverse()[0]
-					};
-					
-					
-					self.$searching++;
-					p && p.start();
-					return $Webfan.hps.rpc.call('whois', [self.domain.host],function(e,r){
-						self.$searching--;
-						p && p.complete();
-						if(e){
-						    frdl.alert.error(e);
-							return;
-						}
-					}).then(function(r){
-						if('undefined'!==typeof r.result){
-						    	self.domain.registered = r.result.registered;
-							    self.domain.info = $sce.trustAsHtml($frdl.base64_decode(r.result.info));
-							    self.domain.link_buy = widget.preferences.link.buy.href.replace(new RegExp(widget.preferences.link.buy.placeholder), self.domain.tld);
-							    self.domain.link_buy = self.domain.link_buy.replace(new RegExp(widget.preferences.link.buy.placeholder_domain), self.domain.host);
-							    self.domain.valid = !(/not supported/.test(self.domain.info));
-							    
-							    if(!self.domain.valid){
-									 $frdl.alert.error( $frdl.inX.__(widget.preferences.errors.invalid.domain, [q]) + '!');
-									 self.domain.info = $sce.trustAsHtml('<error>'+$frdl.inX.__(widget.preferences.errors.invalid.domain, [q])+'</error>');
-								}
-						}else{
-							
-							self.domain.info = $sce.trustAsHtml('<error>Unknown error</error>');
-						}
-						
-						$scope.$digest();
-					});
-				};
-
-
- 
-  
-}
-] 
-});	
-*/
 	;
 	
 	
 	
-	//alert('whois.component.js');
+	
 	
  return angular.module(moduleName);	
 });
