@@ -7,15 +7,7 @@ exports = module.exports = function(config){
 	
 	config.m['frdl/whois'] = require('./../preferences.json');
 	
-/*
- config.hps.scriptengine.lazy.push({
-        name : 'frdl-whois',
-        files : [
-			'module-assets/frdl/whois/whois.component'
-		   
-		]	
-  });		
-*/
+
 	 config.hps.scriptengine.lazy.push({
         name : 'frdl-whois',
         files : [
