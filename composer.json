@@ -7,7 +7,8 @@
 	    "php": ">=7.2",
 		"frdl/web" : "*",
 		"jsmitty12/phpwhois":"5.5.0",
-		"frdl/php-floodprotection" : "*"	
+		"frdl/php-floodprotection" : "*",
+	        "mso/idna-convert": "^1.1"
   },	  
   "autoload": {
         "psr-4": {
