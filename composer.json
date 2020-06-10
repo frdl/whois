@@ -7,7 +7,7 @@
 	    "php": ">=7.2",
 		"frdl/frdlweb-composer-installers" : ">=0.2",
 		"frdl/web" : "*",
-		"jsmitty12/phpwhois":"~5.5.0",
+		"jsmitty12/phpwhois":">=5.6.0",
 		"frdl/php-floodprotection" : "*",
 		"mso/idna-convert": "^1.1"
   },	  
@@ -15,5 +15,9 @@
         "psr-4": {
             "frdl\\whois\\": "src/frdl/whois/"
         }
+  } , 
+  "suggest" : {
+	"frdl/rdap-whois" : "RDAP Protocol Package and Domain Info(Whois)",
+	"frdl/web" : "This package is developed to work in the Frdlweb Framework"  
   }  
 }
