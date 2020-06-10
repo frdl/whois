@@ -7,7 +7,7 @@
 	    "php": ">=7.2",
 		"frdl/frdlweb-composer-installers" : ">=0.2",
 		"frdl/web" : "*",
-		"jsmitty12/phpwhois":">=5.6.0",
+		"jsmitty12/phpwhois":"~5.6",
 		"frdl/php-floodprotection" : "*",
 		"mso/idna-convert": "^1.1"
   },	  
